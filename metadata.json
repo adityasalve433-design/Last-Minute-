@@ -1,0 +1,6 @@
+{
+  "name": "Omni Mind",
+  "description": "An AI-powered productivity companion that proactively helps users complete tasks before deadlines are missed.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

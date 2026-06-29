@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer utilities {
+  .glass-card {
+    background: #121212; /* neutral-900 */
+    border: 1px solid #262626; /* neutral-800 */
+  }
+  
+  .glass-panel {
+    background: #0a0a0a; /* neutral-950 */
+    border: 1px solid #262626; /* neutral-800 */
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 15px rgba(234, 88, 12, 0.3); /* Bold orange shadow */
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.25); /* Bold emerald shadow */
+  }
+
+  .glow-error {
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.35);
+  }
+
+  /* Custom scrollbar hiding */
+  .scroll-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Custom subtle background mesh gradient for Bold Typography theme */
+  .mesh-bg {
+    background: radial-gradient(circle at 30% -10%, rgba(234, 88, 12, 0.12), transparent 50%),
+                radial-gradient(circle at 80% 110%, rgba(16, 185, 129, 0.08), transparent 40%),
+                #0A0A0A;
+  }
+}
+
+/* Base custom styles */
+body {
+  background-color: #0A0A0A;
+  color: #e5e5e5;
+}
+
+/* Material symbols adjustments */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
